@@ -13,6 +13,7 @@ import {
   Palm,
   xDai,
   Telos,
+  SGB,
 } from '../entities/Native'
 import { NativeMap } from '../types'
 import { ChainId } from '../enums'
@@ -46,4 +47,5 @@ export const NATIVE: NativeMap = {
   [ChainId.MOONRIVER]: Movr.onChain(ChainId.MOONRIVER),
   [ChainId.FUSE]: Fuse.onChain(ChainId.FUSE),
   [ChainId.TELOS]: Telos.onChain(ChainId.TELOS),
+  [ChainId.SGB]: SGB.onChain(ChainId.SGB),
 }
