@@ -43,6 +43,7 @@ export const USDC_ADDRESS: AddressMap = {
   [ChainId.CELO]: '0xef4229c8c3250C675F21BCefa42f58EfbfF6002a',
   [ChainId.TELOS]: '0x818ec0A7Fe18Ff94269904fCED6AE3DaE6d6dC0b',
   [ChainId.FUSE]: '0x620fd5fa44BE6af63715Ef4E65DDFA0387aD13F5',
+  [ChainId.SGB]:'0x52Fa48DB9E3d27d9e4284Bd18BBE7A4C2830FC1B'
 }
 
 export const USD_ADDRESS: AddressMap = {
@@ -62,6 +63,7 @@ export const USD_ADDRESS: AddressMap = {
   [ChainId.CELO]: '0x765DE816845861e75A25fCA122bb6898B8B1282a',
   [ChainId.TELOS]: USDC_ADDRESS[ChainId.TELOS],
   [ChainId.FUSE]: USDC_ADDRESS[ChainId.FUSE],
+  [ChainId.SGB]: USDC_ADDRESS[ChainId.SGB],
 }
 
 export const WETH9_ADDRESS: AddressMap = {

@@ -25,6 +25,7 @@ export const USDC: TokenMap = {
 export const USD: TokenMap = {
   ...USDC,
   [ChainId.CELO]: new Token(ChainId.CELO, USD_ADDRESS[ChainId.CELO], 18, 'cUSD', 'Celo Dollar'),
+  [ChainId.SGB]: new Token(ChainId.SGB, USD_ADDRESS[ChainId.SGB], 18, 'YUSD', 'YUSD Stablecoin'),
 }
 
 export const WETH9: TokenMap = {
@@ -159,4 +160,5 @@ export const SUSHI: ChainTokenMap = {
   [ChainId.MOONRIVER]: new Token(ChainId.MOONRIVER, SUSHI_ADDRESS[ChainId.MOONRIVER], 18, 'SUSHI', 'SushiToken'),
   [ChainId.FUSE]: new Token(ChainId.FUSE, SUSHI_ADDRESS[ChainId.FUSE], 18, 'SUSHI', 'SushiToken'),
   [ChainId.TELOS]: new Token(ChainId.TELOS, SUSHI_ADDRESS[ChainId.TELOS], 18, 'SUSHI', 'SushiToken'),
+  [ChainId.SGB]: new Token(ChainId.SGB, SUSHI_ADDRESS[ChainId.SGB], 18, 'ORACLE', 'OracleSwap.io'),
 }
