@@ -13,7 +13,7 @@ export class Token extends AbstractCurrency {
   public readonly isNative: false = false
   public readonly isToken: true = true
 
-  public constructor(chainId: number, address: string, decimals: number, symbol: string, name: string) {
+  public constructor(chainId: number, address: string, decimals: number, symbol?: string, name?: string) {
     super(chainId, decimals, symbol, name)
     this.chainId = chainId
     this.address = validateAndParseAddress(address)
